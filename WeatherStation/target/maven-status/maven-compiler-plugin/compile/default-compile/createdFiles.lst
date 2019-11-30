@@ -1,0 +1,16 @@
+pl\gorczynski\controller\LowMaxByDateController.class
+pl\gorczynski\model\Weather.class
+pl\gorczynski\controller\MainController.class
+pl\gorczynski\service\RealStationService.class
+pl\gorczynski\service\LowMaxEverService.class
+pl\gorczynski\repository\WeatherRepository.class
+pl\gorczynski\service\LowMaxByDateService.class
+pl\gorczynski\controller\ChartsController.class
+pl\gorczynski\service\WeatherService.class
+pl\gorczynski\service\MockStationService.class
+pl\gorczynski\controller\LowMaxEverController.class
+pl\gorczynski\dto\SensorDataDTO.class
+pl\gorczynski\service\ChartsService.class
+pl\gorczynski\DemoApplication.class
+pl\gorczynski\mapper\WeatherMapper.class
+pl\gorczynski\service\StationService.class
