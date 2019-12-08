@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script>
+        window.onload = function () {
+
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                title: {
+                    text: "TEMPERATURE CHART"
+                },
+                axisY: {
+                    title: "Temperature",
+                    valueFormatString: "#0.",
+                    suffix: "°C",
+                },
+                axisX: {
+                    title: "Hours",
+                    valueFormatString: "#0.",
+                    suffix: "HR",
+                },
+                data: [{
+
+                    yValueFormatString: "00.00 °C",
+                    xValueFormatString: "00",
+                    type: "spline",
+                    dataPoints: [
+
+                        {x: 00, y: [[${surveyMap.get(0)}]]},
+                        {x: 01, y: [[${surveyMap.get(1)}]]},
+                        {x: 02, y: [[${surveyMap.get(2)}]]},
+                        {x: 03, y: [[${surveyMap.get(3)}]]},
+                        {x: 04, y: [[${surveyMap.get(4)}]]},
+                        {x: 05, y: [[${surveyMap.get(5)}]]},
+                        {x: 06, y: [[${surveyMap.get(6)}]]},
+                        {x: 07, y: [[${surveyMap.get(7)}]]},
+                        {x: 08, y: [[${surveyMap.get(8)}]]},
+                        {x: 09, y: [[${surveyMap.get(9)}]]},
+                        {x: 10, y: [[${surveyMap.get(10)}]]},
+                        {x: 11, y: [[${surveyMap.get(11)}]]},
+                        {x: 12, y: [[${surveyMap.get(12)}]]},
+                        {x: 13, y: [[${surveyMap.get(13)}]]},
+                        {x: 14, y: [[${surveyMap.get(14)}]]},
+                        {x: 15, y: [[${surveyMap.get(15)}]]},
+                        {x: 16, y: [[${surveyMap.get(16)}]]},
+                        {x: 17, y: [[${surveyMap.get(17)}]]},
+                        {x: 18, y: [[${surveyMap.get(18)}]]},
+                        {x: 19, y: [[${surveyMap.get(19)}]]},
+                        {x: 20, y: [[${surveyMap.get(20)}]]},
+                        {x: 21, y: [[${surveyMap.get(21)}]]},
+                        {x: 22, y: [[${surveyMap.get(22)}]]},
+                        {x: 23, y: [[${surveyMap.get(23)}]]},
+
+
+                    ]
+                }]
+            });
+            chart.render();
+
+        }
+    </script>
+</head>
+<body>
+<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>

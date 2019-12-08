@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{fragments/main_layout}">
+<head>
+    <title>WEATHER STATION</title>
+
+</head>
+
+<body style="background: url(https://s7d2.scene7.com/is/image/TWCNews/0801_n13_chuluotaweatherjpg?wid=2000&hei=1125&$wide-bg$)
+; background-size:100;">
+<div layout:fragment="content" class="container">
+
+    <div class="jumbotron">
+        <h1>CHARTS</h1>
+
+
+        <div class="btn-group-vertical">
+
+
+            <a class="btn btn-lg btn-primary" href="../../chart-all" role="button">TEMPERATURE, HUMIDITY AND PRESSURE BY DATE&raquo;</a>
+            <a class="btn btn-lg btn-primary" href="../../chart-average-daily" role="button">DAILY AVERAGES OF TEMPERATURE, HUMIDITY AND PRESSURE&raquo;</a>
+            <a class="btn btn-lg btn-primary" href="../../line-temperature-chart" role="button">LINE CHART OF TEMPERATURE FROM BEGINNING&raquo;</a>
+            <a class="btn btn-lg btn-primary" href="../../line-humidity-chart" role="button">LINE CHART OF HUMIDITY FROM BEGINNING&raquo;</a>
+            <a class="btn btn-lg btn-primary" href="../../line-pressure-chart" role="button">LINE CHART OF PRESSURE FROM BEGINNING&raquo;</a>
+
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

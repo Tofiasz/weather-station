@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{fragments/main_layout}">
+<head>
+    <title>WEATHER STATION</title>
+
+</head>
+
+<body style="background: url(https://s7d2.scene7.com/is/image/TWCNews/0801_n13_chuluotaweatherjpg?wid=2000&hei=1125&$wide-bg$)
+; background-size:100;">
+<div layout:fragment="content" class="container">
+
+    <div class="jumbotron">
+        <h1>WEATHER STATION</h1>
+
+
+        <div class="btn-group-vertical">
+
+            <p>
+            <strong>STATION IS RUNNING FROM 20.11.2019. IS IN GLIWICE ON RATOWNIKÓW GÓRNICZYCH STREET. </strong>
+            </p>
+            <strong>
+                <p></p>
+                <p>
+                    Current weather
+                </p>
+                <p>Date:
+                <td th:text="${weather.getMeasuredAt().toLocalDate()}"></td>
+                </p>
+                <p>Time:
+                <td th:text="${weather.getMeasuredAt().toLocalTime()}"></td>
+                </p>
+                <p>Temperature:
+                <td th:text="${weather.getTemperature()}"></td>
+                °C</p>
+                <p>Humidity:
+                <td th:text="${weather.getHumidity()}"></td>
+                %</p>
+                <p>Atmospheric pressure:
+                <td th:text="${weather.getAtmosphericPressure()}"></td>
+                hPa</p>
+            </strong>
+        </div>
+    </div>
+</div>
+</body>
+</html>
